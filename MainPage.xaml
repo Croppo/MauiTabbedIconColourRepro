@@ -2,7 +2,9 @@
 <TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:app="clr-namespace:MauiTabbedApp"
+            xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
             SelectedTabColor="{Binding SelectedTabColor}"
             UnselectedTabColor="Grey"
             x:Class="MauiTabbedApp.MainPage"
-            x:DataType="app:TabbedPageViewModel"/>
+            x:DataType="app:TabbedPageViewModel"
+            android:TabbedPage.ToolbarPlacement="Bottom"/>
